@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Simple Blog</h1>
+        </header>
+        <nav>
+            <input type="text" id="keyword-filter" placeholder="Filter by keyword" onkeyup="filterPosts()">
+        </nav>
+        <main id="posts">
+            <article class="post" data-keywords="JavaScript,HTML">
+    <h2>Understanding JavaScript Closures</h2>
+    <p>This post is about understanding JavaScript closures...</p>
+    <p><strong>Tags:</strong> JavaScript, HTML</p>
+    <section>
+        <h3>Comments</h3>
+        <div class="comments">
+            <!-- Comments will be dynamically added here -->
+        </div>
+        <textarea placeholder="Add a comment..."></textarea>
+        <button onclick="addComment(this)">Submit</button>
+    </section>
+</article>
+
+<article class="post" data-keywords="CSS,Design">
+    <h2>Design Tips with CSS</h2>
+    <p>This post discusses some great design tips using CSS...</p>
+    <p><strong>Tags:</strong> CSS, Design</p>
+    <section>
+        <h3>Comments</h3>
+        <div class="comments">
+            <!-- Comments will be dynamically added here -->
+        </div>
+        <textarea placeholder="Add a comment..."></textarea>
+        <button onclick="addComment(this)">Submit</button>
+    </section>
+</article>
+        </main>
+        <footer>
+            <p>© 2024 My Simple Blog</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
