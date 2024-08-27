@@ -1,0 +1,4 @@
+.thin-line {
+    border-bottom: 1px solid #000; /* Adjust color as needed */
+    width: 100%; /* Ensures the line spans the width of the div */
+}
